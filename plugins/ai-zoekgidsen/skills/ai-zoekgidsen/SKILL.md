@@ -1,6 +1,6 @@
 ---
 name: ai-zoekgidsen
-description: Toetst een webpagina of een stuk tekst aan wat de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity zeggen over AI-zoeken, en geeft maximaal tien concrete verbeterpunten met de gids als bron. Gebruik deze skill als iemand vraagt of een pagina of tekst klaar is voor AI-zoekmachines, AI Overviews, ChatGPT, Copilot, Claude of Perplexity, of om een controle op SEO/GEO/AEO vraagt.
+description: Toetst een webpagina of een stuk tekst aan wat de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity zeggen over AI-zoeken, en geeft een volledige analyse: elk verbeterpunt dat uit de gidsen volgt, op volgorde van belang, met de gids als bron. Gebruik deze skill als iemand vraagt of een pagina of tekst klaar is voor AI-zoekmachines, AI Overviews, ChatGPT, Copilot, Claude of Perplexity, of om een controle op SEO/GEO/AEO vraagt.
 argument-hint: "[url of tekst]"
 ---
 
@@ -46,13 +46,21 @@ Let in elk geval op deze groepen:
 7. Structured data komt overeen met de zichtbare tekst.
 8. Beeld, video en bedrijfsgegevens waar dat past.
 
-## Stap 5. Geef maximaal tien verbeterpunten
+## Stap 5. Geef alle verbeterpunten
 
-Sluit af met een genummerde reeks van maximaal tien verbeterpunten, het belangrijkste eerst. Zijn er minder dan tien echte punten, geef er dan minder. Elk punt bevat:
+Geef een volledige analyse: elk verbeterpunt dat uit de gidsen volgt, zonder maximum. Laat niets weg omdat de lijst lang wordt. Deel de punten in drie groepen, binnen elke groep het belangrijkste eerst:
+
+- Eerst oplossen: punten waardoor de pagina niet gelezen, niet geïndexeerd of niet getoond kan worden (toegang, crawlers, noindex, nosnippet, inhoud die alleen client-side laadt).
+- Daarna: punten in opbouw en inhoud die bepalen of een blok tekst bruikbaar is als antwoord.
+- Afwerking: kleinere punten zoals meta description, structured data, beeld en bedrijfsgegevens.
+
+Staat een punt meerdere keren op de pagina (bijvoorbeeld vijf vage tussenkoppen), noem het dan één keer en som alle plekken op. Elk punt bevat:
 
 - wat er nu staat, met de plek op de pagina;
 - wat het moet worden, zo concreet dat iemand het direct kan uitvoeren (waar mogelijk met een voorbeeldzin of voorbeeldregel);
 - de gids waar het uit komt, met naam, bijvoorbeeld "Bron: Bing Webmaster Guidelines".
+
+Sluit af met een telling: aantal punten per groep.
 
 Gebruik het uitvoermodel hieronder.
 
@@ -66,9 +74,15 @@ Bevindingen per gids
 1. [naam gids]: [in orde / niet in orde / niet te controleren] en waarom
 ...
 
-Verbeterpunten (maximaal tien)
-1. [wat er nu staat] -> [wat het moet worden]. Bron: [naam gids]
+Verbeterpunten
+Eerst oplossen
+1. [wat er nu staat, plek] -> [wat het moet worden]. Bron: [naam gids]
 ...
+Daarna
+...
+Afwerking
+...
+Totaal: [x] eerst oplossen, [y] daarna, [z] afwerking
 
 Niet gecontroleerd
 [wat je niet kon nagaan en waarom]

@@ -1,6 +1,6 @@
 # AI-zoekgidsen
 
-Een plugin voor Claude Code van Gold Lemon. Versie 0.1.0, kennis met stand 12 november 2026.
+Een plugin voor Claude Code van Gold Lemon. Versie 0.2.0, kennis met stand 12 november 2026.
 
 ## Wat het doet
 
@@ -10,7 +10,7 @@ Je krijgt:
 
 - de datum van de gebruikte kennis, met een waarschuwing als die ouder is dan drie maanden;
 - per gids een oordeel: in orde, niet in orde of niet te controleren;
-- maximaal tien concrete verbeterpunten, elk met de gids waar het uit komt.
+- een volledige lijst verbeterpunten in drie groepen (eerst oplossen, daarna, afwerking), elk met de gids waar het uit komt.
 
 De skill belooft geen posities en geen citaten in AI-antwoorden. De gidsen beschrijven voorwaarden, geen garanties.
 
@@ -73,4 +73,5 @@ README.md
 ## Wijzigingen
 
 - 12 november 2026: kennis gecontroleerd en bijgewerkt, stand 12 november 2026. Datums van de gidsen aangevuld, het voorkeurssignaal "geen AI-training" van Anthropic toegevoegd (30 oktober 2026) en een algemeen deel over crawlers toegevoegd.
+- 0.2.0 (12 november 2026): volledige analyse in plaats van maximaal tien punten, ingedeeld in drie groepen.
 - 0.1.0 (12 november 2026): eerste versie. Eén skill, kennis uit acht officiële gidsen, gelezen op 2 november 2026.
