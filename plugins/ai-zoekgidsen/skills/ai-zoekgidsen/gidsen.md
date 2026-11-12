@@ -2,7 +2,7 @@ Stand: 12 november 2026, versie 0.1.0
 
 # AI-zoekgidsen: wat de platforms zelf zeggen
 
-Acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity. Alle acht gelezen op 2 november 2026 en gecontroleerd op 12 november 2026.
+Acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity. Alle acht gelezen op 12 november 2026, in de laatste versie die de platforms die dag online hadden.
 
 ## De rode draad
 
@@ -19,7 +19,7 @@ Alle platforms zeggen hetzelfde: AI-zoeken draait op de gewone zoekindex. Nieman
 - Bron: Google Search Central, documentatie
 - URL: https://developers.google.com/search/docs/appearance/ai-features
 - Datum op de gids: bijgewerkt op 10 december 2025
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -37,7 +37,7 @@ Kernpunten:
 - Bron: Google Search Central Blog, John Mueller
 - URL: https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search
 - Datum op de gids: 21 mei 2025
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -53,7 +53,7 @@ Kernpunten:
 - Bron: Google Search Central, documentatie
 - URL: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 - Datum op de gids: bijgewerkt op 10 december 2025
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -68,7 +68,7 @@ Kernpunten:
 - Bron: Microsoft Advertising Blog, Krishna Madhavan (Bing)
 - URL: https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers
 - Datum op de gids: 8 oktober 2025
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -87,7 +87,7 @@ Kernpunten:
 - Bron: Bing Webmaster Tools, helpdocumentatie (geldt ook voor Copilot en de grounding API)
 - URL: https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a
 - Datum op de gids: de pagina toont geen datum
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -107,7 +107,7 @@ Kernpunten:
 - Bron: OpenAI, ontwikkelaarsdocumentatie
 - URL: https://developers.openai.com/api/docs/bots
 - Datum op de gids: de pagina toont geen datum
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -125,7 +125,7 @@ Kernpunten:
 - Bron: Claude Help Center, "Does Anthropic crawl data from the web, and how can site owners block the crawler?"
 - URL: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
 - Datum op de gids: de pagina toont geen paginadatum, maar bevat tekst die gedateerd is op 30 oktober 2026
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 
@@ -145,7 +145,7 @@ Kernpunten:
 - Bron: Perplexity, documentatie
 - URL: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
 - Datum op de gids: de pagina toont geen datum
-- Gelezen op 2 november 2026, gecontroleerd op 12 november 2026
+- Gelezen op 12 november 2026 (laatste versie)
 
 Kernpunten:
 

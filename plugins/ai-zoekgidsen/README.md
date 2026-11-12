@@ -74,4 +74,4 @@ README.md
 
 - 12 november 2026: kennis gecontroleerd en bijgewerkt, stand 12 november 2026. Datums van de gidsen aangevuld, het voorkeurssignaal "geen AI-training" van Anthropic toegevoegd (30 oktober 2026) en een algemeen deel over crawlers toegevoegd.
 - 0.2.0 (12 november 2026): volledige analyse in plaats van maximaal tien punten, ingedeeld in drie groepen.
-- 0.1.0 (12 november 2026): eerste versie. Eén skill, kennis uit acht officiële gidsen, gelezen op 2 november 2026.
+- 0.1.0 (12 november 2026): eerste versie. Eén skill, kennis uit acht officiële gidsen, gelezen op 12 november 2026.
