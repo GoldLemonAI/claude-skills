@@ -27,6 +27,32 @@ Uitleg per skill, met een kopieerknop: [goldlemon.nl/claude-skills](https://gold
 | 11 | [Consistentie-check](consistentie-check/SKILL.md) | AI-assistenten | Zeggen je site, LinkedIn en Google hetzelfde over wie je bent? Spreken bronnen elkaar tegen, dan kiest AI een ander. | Je omschrijving op site, LinkedIn, Google-bedrijfsprofiel en vermeldingen |
 | 12 | [AI-crawler-check](ai-crawler-check/SKILL.md) | AI-assistenten | Kan AI je site wel lezen? Kijk of je de AI-crawlers niet per ongeluk blokkeert. | Je robots.txt (jouwsite.nl/robots.txt) |
 
+## Plugin: AI-zoekgidsen
+
+Nieuw in deze repo: een plugin voor Claude Code. Die toetst een webpagina of een stuk tekst aan de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken. Je krijgt per gids een oordeel en maximaal tien concrete verbeterpunten, elk met de gids als bron. De plugin belooft geen posities en geen citaten in AI-antwoorden.
+
+Installeren, in een sessie van Claude Code:
+
+```
+/plugin marketplace add GoldLemonAI/claude-skills
+/plugin install ai-zoekgidsen@goldlemon
+```
+
+Gebruiken:
+
+```
+/ai-zoekgidsen:ai-zoekgidsen https://voorbeeld.nl/pagina/
+```
+
+Bijwerken, vanuit de terminal:
+
+```
+claude plugin marketplace update goldlemon
+claude plugin update ai-zoekgidsen@goldlemon
+```
+
+Alle uitleg staat in [plugins/ai-zoekgidsen/README.md](plugins/ai-zoekgidsen/README.md). De kennis heeft als stand 12 november 2026.
+
 ## Meer
 
 - Wil je weten wat AI over jouw bedrijf zegt? Doe de [gratis AI-scan](https://goldlemon.nl/ai-scan/).
