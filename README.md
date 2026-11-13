@@ -29,7 +29,7 @@ Uitleg per skill, met een kopieerknop: [goldlemon.nl/claude-skills](https://gold
 
 ## Plugin: AI-zoekgidsen
 
-Nieuw in deze repo: een plugin voor Claude Code. Die toetst een webpagina of een stuk tekst aan de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken. Je krijgt per gids een oordeel en een volledige lijst verbeterpunten op volgorde van belang, elk met de gids als bron. De plugin belooft geen posities en geen citaten in AI-antwoorden.
+Nieuw in deze repo: een plugin voor Claude Code. Die toetst een webpagina of een stuk tekst aan de tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken. Je krijgt per gids een oordeel en een volledige lijst verbeterpunten op volgorde van belang, elk met de gids als bron. De plugin belooft geen posities en geen citaten in AI-antwoorden.
 
 Installeren, in een sessie van Claude Code:
 
@@ -51,7 +51,7 @@ claude plugin marketplace update goldlemon
 claude plugin update ai-zoekgidsen@goldlemon
 ```
 
-Alle uitleg staat in [plugins/ai-zoekgidsen/README.md](plugins/ai-zoekgidsen/README.md). De kennis heeft als stand 12 november 2026.
+Alle uitleg staat in [plugins/ai-zoekgidsen/README.md](plugins/ai-zoekgidsen/README.md). De kennis heeft als stand 13 november 2026 (versie 0.3.0).
 
 ## Meer
 

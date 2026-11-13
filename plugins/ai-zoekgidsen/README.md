@@ -1,10 +1,10 @@
 # AI-zoekgidsen
 
-Een plugin voor Claude Code van Gold Lemon. Versie 0.2.0, kennis met stand 12 november 2026.
+Een plugin voor Claude Code van Gold Lemon. Versie 0.3.0, kennis met stand 13 november 2026.
 
 ## Wat het doet
 
-De plugin bevat één skill. Die toetst een webpagina of een stuk tekst aan wat acht officiële gidsen zeggen over AI-zoeken: drie van Google, en één van Microsoft, Bing, OpenAI, Anthropic en Perplexity.
+De plugin bevat één skill. Die toetst een webpagina of een stuk tekst aan wat tien officiële gidsen zeggen over AI-zoeken: drie van Google, één van Microsoft, drie van Bing en één van OpenAI, Anthropic en Perplexity.
 
 Je krijgt:
 
@@ -72,6 +72,7 @@ README.md
 
 ## Wijzigingen
 
+- 0.3.0 (13 november 2026): tien gidsen in plaats van acht, alle tien gelezen op 13 november 2026. Nieuw: de hoofdgids van Google voor AI-functies (juli 2026), met de schakelaar en het AI-rapport in Search Console en de lijst van wat je niet hoeft te doen (zoals llms.txt). Nieuw van Bing: het rapport AI Performance met Citation Share, en de nieuwe voorkeuren voor training en grounding, in te stellen vóór 1 maart 2027. "Succeeding in AI search" vervalt, "AI features and your website" staat bij Google op noindex en is gemarkeerd als afgebouwd. De skill toetst nu ook de nieuwe Bing-tags en zet de instellingen in Search Console en Bing Webmaster Tools onder Niet gecontroleerd.
 - 12 november 2026: kennis gecontroleerd en bijgewerkt, stand 12 november 2026. Datums van de gidsen aangevuld, het voorkeurssignaal "geen AI-training" van Anthropic toegevoegd (30 oktober 2026) en een algemeen deel over crawlers toegevoegd.
 - 0.2.0 (12 november 2026): volledige analyse in plaats van maximaal tien punten, ingedeeld in drie groepen.
 - 0.1.0 (12 november 2026): eerste versie. Eén skill, kennis uit acht officiële gidsen, gelezen op 12 november 2026.

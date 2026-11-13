@@ -8,7 +8,7 @@
     {
       "name": "ai-zoekgidsen",
       "source": "./plugins/ai-zoekgidsen",
-      "description": "Toetst een webpagina of tekst aan de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken."
+      "description": "Toetst een webpagina of tekst aan de tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken."
     }
   ]
 }

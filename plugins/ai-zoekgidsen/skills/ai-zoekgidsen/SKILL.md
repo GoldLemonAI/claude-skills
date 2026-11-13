@@ -1,12 +1,12 @@
 ---
 name: ai-zoekgidsen
-description: Toetst een webpagina of een stuk tekst aan wat de acht officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity zeggen over AI-zoeken, en geeft een volledige analyse: elk verbeterpunt dat uit de gidsen volgt, op volgorde van belang, met de gids als bron. Gebruik deze skill als iemand vraagt of een pagina of tekst klaar is voor AI-zoekmachines, AI Overviews, ChatGPT, Copilot, Claude of Perplexity, of om een controle op SEO/GEO/AEO vraagt.
+description: Toetst een webpagina of een stuk tekst aan wat de tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity zeggen over AI-zoeken, en geeft een volledige analyse: elk verbeterpunt dat uit de gidsen volgt, op volgorde van belang, met de gids als bron. Gebruik deze skill als iemand vraagt of een pagina of tekst klaar is voor AI-zoekmachines, AI Overviews, ChatGPT, Copilot, Claude of Perplexity, of om een controle op SEO/GEO/AEO vraagt.
 argument-hint: "[url of tekst]"
 ---
 
 # AI-zoekgidsen
 
-Je toetst een webpagina of een stuk tekst aan de acht officiële gidsen van de platforms zelf. Je gebruikt alleen wat in die gidsen staat. Eigen aannames, cijfers van leveranciers en adviezen uit andere bronnen horen hier niet in.
+Je toetst een webpagina of een stuk tekst aan de officiële gidsen van de platforms zelf. Je gebruikt alleen wat in die gidsen staat. Eigen aannames, cijfers van leveranciers en adviezen uit andere bronnen horen hier niet in.
 
 Invoer: `$ARGUMENTS`. Dat is een URL of een stuk tekst. Ontbreekt de invoer, vraag dan om een URL of om de tekst.
 
@@ -38,13 +38,14 @@ Loop de gidsen in de kennis één voor één langs. Geef per punt een oordeel: i
 Let in elk geval op deze groepen:
 
 1. Toegang: indexeerbaar, HTTP 200, geen blokkade voor Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot, Claude-User en PerplexityBot.
-2. Meta-instellingen: noindex, nosnippet, max-snippet, NOARCHIVE, NOCACHE.
+2. Meta-instellingen: noindex, nosnippet, max-snippet, NOARCHIVE, NOCACHE, en de nieuwe Bing-voorkeuren `ai-training` en `ai-grounding` (meta-tag `Bingbot` of `X-Robots-Tag`) plus `__usage_ai-training` in robots.txt. Staat er nog NOARCHIVE of NOCACHE, meld dan dat Bing die vanaf 1 maart 2027 niet meer leest als voorkeur voor training of grounding.
 3. Opbouw: title, meta description en H1 sluiten op elkaar aan; tussenkoppen als echte vragen; lijsten en tabellen voor stappen en vergelijkingen.
 4. Blokken die los te gebruiken zijn: een antwoord van een of twee zinnen dat zonder context klopt.
 5. Zichtbaarheid van de inhoud: niets belangrijks verstopt in tabs, uitklapblokken, pdf's, afbeeldingen of client-side rendering.
 6. Inhoud: eigen en concreet, feiten uitgeschreven, getallen in plaats van vage woorden, vaste namen voor bedrijf, mensen en producten, één onderwerp per URL, de kern bovenaan.
 7. Structured data komt overeen met de zichtbare tekst.
 8. Beeld, video en bedrijfsgegevens waar dat past.
+9. Meten en instellingen die je vanaf de pagina niet kunt zien: de schakelaar Search generative AI en het rapport Generatieve AI-prestaties in Search Console, en het rapport AI Performance in Bing Webmaster Tools. Zet deze altijd onder "Niet gecontroleerd", met de stap om ze na te lopen.
 
 ## Stap 5. Geef alle verbeterpunten
 
@@ -92,7 +93,9 @@ Niet gecontroleerd
 
 - Beloof nooit een positie, een vermelding of een citaat in een AI-antwoord of zoekresultaat. De gidsen beschrijven voorwaarden, geen garanties. Schrijf dus "dit maakt de pagina geschikt om gebruikt te worden" en nooit "hiermee word je geciteerd".
 - Elk verbeterpunt heeft een gids als bron. Kun je geen gids noemen, laat het punt dan weg.
-- Adviseer geen speciale AI-bestanden, geen speciale schema's en geen aparte AI-opmaak. De gidsen vragen daar niet om.
+- Adviseer geen speciale AI-bestanden (zoals llms.txt), geen speciale schema's en geen aparte AI-opmaak. De gidsen vragen daar niet om, en Google noemt ze uitdrukkelijk overbodig.
+- Adviseer niet om tekst op te knippen of te herschrijven speciaal voor AI, en niet om aparte pagina's te maken voor elke variant van een zoekvraag. Google noemt het eerste overbodig en het laatste misbruik. Adviezen over koppen, lijsten en korte zelfstandige antwoorden komen uit de gids van Microsoft; noem die dan ook als bron.
+- Adviseer nooit om grounding of AI-functies uit te zetten zonder te zeggen dat dit de zichtbaarheid in AI-antwoorden vermindert.
 - Raad geen technieken aan die de gidsen als misbruik noemen: zoekwoorden opstapelen, massaal AI-teksten zonder controle, verborgen opdrachten aan taalmodellen.
 - Noem de dienst "SEO/GEO/AEO".
 - Schrijf in gewoon zakelijk Nederlands. Gebruik geen lange gedachtestreepjes als zinsbreuk.
