@@ -1,6 +1,6 @@
 # AI-zoekgidsen
 
-Een plugin voor Claude Code van Gold Lemon. Versie 0.3.0, kennis met stand 13 november 2026.
+Een plugin voor Claude Code van Gold Lemon. Versie 0.3.1, kennis met stand 13 november 2026.
 
 ## Wat het doet
 
@@ -47,6 +47,15 @@ claude plugin marketplace add GoldLemonAI/claude-skills
 claude plugin install ai-zoekgidsen@goldlemon
 ```
 
+## Gebruiken in claude.ai of de Claude-app
+
+1. Download het zipbestand van https://goldlemon.nl/skills/ai-zoekgidsen/. Pak het niet uit.
+2. Ga in claude.ai naar Settings, dan Capabilities, en zet Code execution aan als dat nog uit staat.
+3. Kies bij Skills de knop Upload skill en selecteer het zipbestand. Zo komen SKILL.md en gidsen.md allebei mee.
+4. Vraag in een chat bijvoorbeeld: "Toets https://voorbeeld.nl/pagina/ met de skill ai-zoekgidsen."
+
+In claude.ai mag Claude alleen pagina's openen die je zelf noemt of die hij via een zoekopdracht vindt. Lukt het ophalen van de online kennis niet, dan gebruikt de skill de meegeleverde kennis en zegt hij dat erbij. Wil je zeker de nieuwste kennis, zet dan https://goldlemon.nl/skills/ai-zoekgidsen/kennis/ in je bericht.
+
 ## Bijwerken
 
 Automatisch bijwerken staat voor deze marketplace standaard uit. Werk zo bij vanuit de terminal:
@@ -72,6 +81,7 @@ README.md
 
 ## Wijzigingen
 
+- 0.3.1 (14 november 2026): werkt nu ook in claude.ai. Mag de skill de kennispagina niet direct openen, dan zoekt hij die op; lukt dat niet, dan gebruikt hij de meegeleverde kennis en zegt hij hoe je de nieuwste kennis meegeeft. De regel "Stand:" mag onder het menu van de site staan. Zonder $ARGUMENTS leest hij de URL of tekst uit het bericht. Geeft de ophaaltool alleen tekst, dan haalt hij de HTML en headers apart op. De kennis zelf is niet veranderd.
 - 0.3.0 (13 november 2026): tien gidsen in plaats van acht, alle tien gelezen op 13 november 2026. Nieuw: de hoofdgids van Google voor AI-functies (juli 2026), met de schakelaar en het AI-rapport in Search Console en de lijst van wat je niet hoeft te doen (zoals llms.txt). Nieuw van Bing: het rapport AI Performance met Citation Share, en de nieuwe voorkeuren voor training en grounding, in te stellen vóór 1 maart 2027. "Succeeding in AI search" vervalt, "AI features and your website" staat bij Google op noindex en is gemarkeerd als afgebouwd. De skill toetst nu ook de nieuwe Bing-tags en zet de instellingen in Search Console en Bing Webmaster Tools onder Niet gecontroleerd.
 - 12 november 2026: kennis gecontroleerd en bijgewerkt, stand 12 november 2026. Datums van de gidsen aangevuld, het voorkeurssignaal "geen AI-training" van Anthropic toegevoegd (30 oktober 2026) en een algemeen deel over crawlers toegevoegd.
 - 0.2.0 (12 november 2026): volledige analyse in plaats van maximaal tien punten, ingedeeld in drie groepen.

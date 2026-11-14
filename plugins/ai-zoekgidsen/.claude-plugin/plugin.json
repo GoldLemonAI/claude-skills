@@ -1,6 +1,6 @@
 {
   "name": "ai-zoekgidsen",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Toetst een webpagina of tekst aan de tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken.",
   "author": {
     "name": "Gold Lemon"
