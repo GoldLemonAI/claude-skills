@@ -1,6 +1,6 @@
 Stand: 13 november 2026, versie 0.3.0
 
-# AI-zoekgidsen: wat de platforms zelf zeggen
+# AI-vindbaarheid: wat de platforms zelf zeggen
 
 Tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity. Alle tien gelezen op 13 november 2026, in de laatste versie die de platforms die dag online hadden.
 

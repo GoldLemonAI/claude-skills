@@ -1,6 +1,6 @@
-# AI-zoekgidsen
+# AI-vindbaarheid
 
-Een plugin voor Claude Code van Gold Lemon. Versie 0.3.1, kennis met stand 13 november 2026.
+Een plugin voor Claude Code van Gold Lemon. Versie 0.4.0, kennis met stand 13 november 2026.
 
 ## Wat het doet
 
@@ -14,7 +14,7 @@ Je krijgt:
 
 De skill belooft geen posities en geen citaten in AI-antwoorden. De gidsen beschrijven voorwaarden, geen garanties.
 
-De skill probeert eerst de actuele kennis op te halen van `https://goldlemon.nl/skills/ai-zoekgidsen/kennis/`. Lukt dat niet, dan gebruikt hij het meegeleverde bestand `gidsen.md`.
+De skill probeert eerst de actuele kennis op te halen van `https://goldlemon.nl/skills/ai-vindbaarheid/kennis/`. Lukt dat niet, dan gebruikt hij het meegeleverde bestand `gidsen.md`.
 
 ## Installeren in drie stappen
 
@@ -29,13 +29,13 @@ Typ deze commando's in een sessie van Claude Code.
 2. Installeer de plugin en kies in het venster dat opent voor wie je hem installeert:
 
    ```
-   /plugin install ai-zoekgidsen@goldlemon
+   /plugin install ai-vindbaarheid@goldlemon
    ```
 
 3. Gebruik de skill met een URL of een stuk tekst:
 
    ```
-   /ai-zoekgidsen:ai-zoekgidsen https://voorbeeld.nl/pagina/
+   /ai-vindbaarheid:ai-vindbaarheid https://voorbeeld.nl/pagina/
    ```
 
    Zie je de skill nog niet, typ dan eerst `/reload-plugins`.
@@ -44,17 +44,17 @@ Liever vanuit de gewone terminal, zonder sessie? Dan zijn stap 1 en 2:
 
 ```
 claude plugin marketplace add GoldLemonAI/claude-skills
-claude plugin install ai-zoekgidsen@goldlemon
+claude plugin install ai-vindbaarheid@goldlemon
 ```
 
 ## Gebruiken in claude.ai of de Claude-app
 
-1. Download het zipbestand van https://goldlemon.nl/skills/ai-zoekgidsen/. Pak het niet uit.
+1. Download het zipbestand van https://goldlemon.nl/skills/ai-vindbaarheid/. Pak het niet uit.
 2. Ga in claude.ai naar Settings, dan Capabilities, en zet Code execution aan als dat nog uit staat.
 3. Kies bij Skills de knop Upload skill en selecteer het zipbestand. Zo komen SKILL.md en gidsen.md allebei mee.
-4. Vraag in een chat bijvoorbeeld: "Toets https://voorbeeld.nl/pagina/ met de skill ai-zoekgidsen."
+4. Vraag in een chat bijvoorbeeld: "Toets https://voorbeeld.nl/pagina/ met de skill ai-vindbaarheid."
 
-In claude.ai mag Claude alleen pagina's openen die je zelf noemt of die hij via een zoekopdracht vindt. Lukt het ophalen van de online kennis niet, dan gebruikt de skill de meegeleverde kennis en zegt hij dat erbij. Wil je zeker de nieuwste kennis, zet dan https://goldlemon.nl/skills/ai-zoekgidsen/kennis/ in je bericht.
+In claude.ai mag Claude alleen pagina's openen die je zelf noemt of die hij via een zoekopdracht vindt. Lukt het ophalen van de online kennis niet, dan gebruikt de skill de meegeleverde kennis en zegt hij dat erbij. Wil je zeker de nieuwste kennis, zet dan https://goldlemon.nl/skills/ai-vindbaarheid/kennis/ in je bericht.
 
 ## Bijwerken
 
@@ -62,10 +62,18 @@ Automatisch bijwerken staat voor deze marketplace standaard uit. Werk zo bij van
 
 ```
 claude plugin marketplace update goldlemon
-claude plugin update ai-zoekgidsen@goldlemon
+claude plugin update ai-vindbaarheid@goldlemon
 ```
 
 In een sessie kan het ook: typ `/plugin`, ga naar het tabblad Marketplaces, kies `goldlemon` en daarna Update marketplace. Wil je dat het voortaan vanzelf gaat, kies daar dan Enable auto-update.
+
+Had je de skill al onder de oude naam ai-zoekgidsen? Die kun je niet bijwerken naar de nieuwe naam. Verwijder de oude en installeer de nieuwe:
+
+```
+claude plugin marketplace update goldlemon
+claude plugin uninstall ai-zoekgidsen@goldlemon
+claude plugin install ai-vindbaarheid@goldlemon
+```
 
 Na een update typ je `/reload-plugins` of start je een nieuwe sessie.
 
@@ -73,14 +81,15 @@ Na een update typ je `/reload-plugins` of start je een nieuwe sessie.
 
 ```
 .claude-plugin/marketplace.json
-plugins/ai-zoekgidsen/.claude-plugin/plugin.json
-plugins/ai-zoekgidsen/skills/ai-zoekgidsen/SKILL.md
-plugins/ai-zoekgidsen/skills/ai-zoekgidsen/gidsen.md
+plugins/ai-vindbaarheid/.claude-plugin/plugin.json
+plugins/ai-vindbaarheid/skills/ai-vindbaarheid/SKILL.md
+plugins/ai-vindbaarheid/skills/ai-vindbaarheid/gidsen.md
 README.md
 ```
 
 ## Wijzigingen
 
+- 0.4.0 (16 november 2026): nieuwe naam. De skill heet nu AI-vindbaarheid (was AI-zoekgidsen). Installeer opnieuw met `/plugin install ai-vindbaarheid@goldlemon`; de oude naam verdwijnt uit de marketplace. De kennispagina staat nu op https://goldlemon.nl/skills/ai-vindbaarheid/kennis/. De werking en de kennis zijn niet veranderd.
 - 0.3.1 (14 november 2026): werkt nu ook in claude.ai. Mag de skill de kennispagina niet direct openen, dan zoekt hij die op; lukt dat niet, dan gebruikt hij de meegeleverde kennis en zegt hij hoe je de nieuwste kennis meegeeft. De regel "Stand:" mag onder het menu van de site staan. Zonder $ARGUMENTS leest hij de URL of tekst uit het bericht. Geeft de ophaaltool alleen tekst, dan haalt hij de HTML en headers apart op. De kennis zelf is niet veranderd.
 - 0.3.0 (13 november 2026): tien gidsen in plaats van acht, alle tien gelezen op 13 november 2026. Nieuw: de hoofdgids van Google voor AI-functies (juli 2026), met de schakelaar en het AI-rapport in Search Console en de lijst van wat je niet hoeft te doen (zoals llms.txt). Nieuw van Bing: het rapport AI Performance met Citation Share, en de nieuwe voorkeuren voor training en grounding, in te stellen vóór 1 maart 2027. "Succeeding in AI search" vervalt, "AI features and your website" staat bij Google op noindex en is gemarkeerd als afgebouwd. De skill toetst nu ook de nieuwe Bing-tags en zet de instellingen in Search Console en Bing Webmaster Tools onder Niet gecontroleerd.
 - 12 november 2026: kennis gecontroleerd en bijgewerkt, stand 12 november 2026. Datums van de gidsen aangevuld, het voorkeurssignaal "geen AI-training" van Anthropic toegevoegd (30 oktober 2026) en een algemeen deel over crawlers toegevoegd.

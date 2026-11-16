@@ -6,8 +6,8 @@
   },
   "plugins": [
     {
-      "name": "ai-zoekgidsen",
-      "source": "./plugins/ai-zoekgidsen",
+      "name": "ai-vindbaarheid",
+      "source": "./plugins/ai-vindbaarheid",
       "description": "Toetst een webpagina of tekst aan de tien officiële gidsen van Google, Microsoft, Bing, OpenAI, Anthropic en Perplexity over AI-zoeken."
     }
   ]
